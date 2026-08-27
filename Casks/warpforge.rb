@@ -1,6 +1,6 @@
 cask "warpforge" do
-  version "0.10.3"
-  sha256 "548e5ff5fe8a36927ac7f0c9319a52bb496cbce9c394f9e23960cf45c79c9e51"
+  version "0.11.1"
+  sha256 "d05b89bbb1e538ca585efd5101d71a15b4c0c96de632c561f737937042e1606f"
 
   url "https://github.com/ephor/warpforge/releases/download/v#{version}/Warpforge_#{version}_aarch64.dmg"
   name "Warpforge"
