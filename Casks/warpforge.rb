@@ -1,20 +1,25 @@
 cask "warpforge" do
-  version "0.11.1"
-  sha256 "d05b89bbb1e538ca585efd5101d71a15b4c0c96de632c561f737937042e1606f"
+  version "0.12.0"
 
-  url "https://github.com/ephor/warpforge/releases/download/v#{version}/Warpforge_#{version}_aarch64.dmg"
+  on_macos do
+    sha256 "4c21665e599c47d0022b4c4c0d8518b6208b4a5fd8f618e1d20d73f6285c40dd"
+    url "https://github.com/warpforgehq/warpforge/releases/download/v#{version}/Warpforge_#{version}_aarch64.dmg"
+  end
+  on_linux do
+    sha256 "fc39e4585afed292964c2a57c6d2543e71137bb8d93cf87186abfad3821c219f"
+    url "https://github.com/warpforgehq/warpforge/releases/download/v#{version}/Warpforge__amd64.AppImage"
+  end
+
   name "Warpforge"
   desc "Workspace orchestrator with embedded agent terminals"
-  homepage "https://github.com/ephor/warpforge"
+  homepage "https://github.com/warpforgehq/warpforge"
 
   livecheck do
     url :stable
     strategy :github_latest
   end
 
-  # Updates are delivered by the built-in Tauri updater; Homebrew only
-  # performs the initial install and must not fight the in-app updater.
   auto_updates true
-
-  app "Warpforge.app"
+  app "Warpforge.app" if OS.mac?
+  binary "Warpforge_\#{version}_amd64.AppImage", target: "warpforge" if OS.linux?
 end
