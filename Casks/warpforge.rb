@@ -7,7 +7,7 @@ cask "warpforge" do
   end
   on_linux do
     sha256 "0ed40ef95644734c163e597ba75c771b258c1d98c9ed4208d5d43fbb764adcfe"
-    url "https://github.com/warpforgehq/warpforge/releases/download/v#{version}/Warpforge__amd64.AppImage"
+    url "https://github.com/warpforgehq/warpforge/releases/download/v#{version}/Warpforge_#{version}_amd64.AppImage"
   end
 
   name "Warpforge"
