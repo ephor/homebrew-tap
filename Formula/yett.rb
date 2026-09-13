@@ -1,28 +1,28 @@
 class Yett < Formula
   desc "Deliver secrets to a process environment from committed SOPS files"
   homepage "https://github.com/warpforgehq/yett"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/warpforgehq/yett/releases/download/v0.1.1/yett-v0.1.1-aarch64-apple-darwin.tar.gz"
-      sha256 "7d0c0371f60d51a3dd3cdb695e9d374e05765af1c15afdf184e3f981ed155471"
+      url "https://github.com/warpforgehq/yett/releases/download/v0.1.2/yett-v0.1.2-aarch64-apple-darwin.tar.gz"
+      sha256 "5eaa3f6db856b3745ac00f8aaeaf3683d8ebe9c755287e817314ddb444086965"
     end
     on_intel do
-      url "https://github.com/warpforgehq/yett/releases/download/v0.1.1/yett-v0.1.1-x86_64-apple-darwin.tar.gz"
-      sha256 "1fd496031b9b656de1b283834424c6f3b536cf53fec68ca5a50bc1114eb39985"
+      url "https://github.com/warpforgehq/yett/releases/download/v0.1.2/yett-v0.1.2-x86_64-apple-darwin.tar.gz"
+      sha256 "32dda77425e68b41fc9fb9ef48f1c84fa38b6afd92d7eb251f63f26518797d62"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/warpforgehq/yett/releases/download/v0.1.1/yett-v0.1.1-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "72aa5462046d6cdec0d229861ad24aea672753618c4def858854cb726858fa0f"
+      url "https://github.com/warpforgehq/yett/releases/download/v0.1.2/yett-v0.1.2-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "49a64c1428b52ae3b0c92cfab022f497ecc0b982a5eb111e211fcc160d5cbe7b"
     end
     on_intel do
-      url "https://github.com/warpforgehq/yett/releases/download/v0.1.1/yett-v0.1.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "de4c8206821d5c6534465122e27b03ce0eb53412d75bb908ed33fe5b2226766c"
+      url "https://github.com/warpforgehq/yett/releases/download/v0.1.2/yett-v0.1.2-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "43915cf39c15654422166cba0c5f6b75b0cceba39b961eba56ca85a812ba1734"
     end
   end
 
